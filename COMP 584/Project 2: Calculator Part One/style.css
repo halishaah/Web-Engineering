@@ -1,0 +1,88 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #252525;
+}
+
+.wrapper {
+    width: 400px;
+    border: 1px solid #cccccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* Using CSS Grid to arrange the buttons */
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+}
+
+.all-clear{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #CE1F39;
+  color: #ffffff;
+}
+.number-0{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  
+}
+
+
+
+/* Style the calculator screen */ 
+.cal-screen{
+  width: 100%;
+  font-size: 3rem;
+  height: 90px;
+  border: none;
+  background-color: #010101;
+  color: #ffffff;
+  text-align: right;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* Style the buttons */ 
+button {
+  height: 100px;
+  background-color: #E7E8E8;
+  border: 1px solid #010101;
+  font-size: 2.5rem;
+  color: #333333; 
+ 
+}
+
+button:hover {
+  background-color: #9A9C9C;
+}
+
+.operator, .equal-sign {
+  color: #ffffff;
+  background-color: #DF9B30;
+}
+
+
+.equal-sign:hover {
+  background-color: #2CA90A;
+}
+.all-clear:hover {
+  background-color: #EB5727;
+}
+.operator:hover {
+  background-color: #FBB317;
+}
+
+

@@ -1,5 +1,7 @@
 # HW2 Applying Responsiveness and Table Based Design to Email with HTML and CSS
 
+## Link to Glitch: https://glitch.com/edit/#!/comp584-hw2-hossein-alishah
+
 Link to HW ==> https://glitch.com/edit/#!/comp-584-hw2 (Links to an external site.) 
 
 This is a different project link then hw1. You can use the same content but keep the glitch projects separate. 

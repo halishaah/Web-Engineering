@@ -1,5 +1,7 @@
 # HW1 Formatting Basic Email with HTML and CSS
 
+## Link to Glitch: https://glitch.com/edit/#!/comp584-hw1-hossein-alishah
+
 - Link to some good quality placeholder images ==> https://unsplash.com/ (Links to an external site.) 
 - Unsure if your choice of html/css will work with email clients? ==> https://www.caniemail.com/ (Links to an external site.) 
 - Again for this HW I'm only expecting purely structural html and css. No JavaScript functionality at the moment. 

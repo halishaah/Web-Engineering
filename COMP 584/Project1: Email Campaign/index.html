@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+      /* CLIENT-SPECIFIC STYLES */
+      body,
+      table,
+      td,
+      a {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+      table,
+      td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+
+      /* RESET STYLES */
+      img {
+        border: 0;
+        height: auto;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+      }
+      table {
+        border-collapse: collapse !important;
+      }
+      body {
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+      }
+
+      /* iOS BLUE LINKS */
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      /* GMAIL BLUE LINKS */
+      u + #body a {
+        color: inherit;
+        text-decoration: none;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+      }
+
+      /* SAMSUNG MAIL BLUE LINKS */
+      #MessageViewBody a {
+        color: inherit;
+        text-decoration: none;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+      }
+
+      /* Universal styles for links and stuff */
+
+      a:hover {
+        color: black;
+        text-decoration: none;
+      }
+      a.button {
+        transition: all 0.2s ease;
+      }
+      a.button:hover {
+        background-color: yellow !important;
+        color: black !important;
+        box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+        transform: translateY(-10px);
+      }
+
+      .slide-label:hover {
+        color: red !important;
+      }
+
+      /* Responsive styles */
+
+      /* 
+          This CSS will apply styles only if your browser's viewpoint 
+          width is equal to or narrower than 600px
+      */
+      @media screen and (max-width: 600px) {
+        /*
+            change table width 100% to make it fluid for smaller screens <600px
+            need important to override the inlines CSS
+        */
+        .mobile {
+          width: 100% !important;
+        }
+        /* 
+            set display to block to help with the stacking and set with to 100% to 
+            fill its area in full don't forget multiple importants
+        */
+        .block {
+          display: block !important;
+          width: 100% !important;
+        }
+      }
+
+      /* CSS Animations */
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      .fade1 {
+        animation: 2s 1 fade-in;
+      }
+      .fade2 {
+        animation: 3s 1 fade-in;
+      }
+
+      /* Interactive elements*/
+      /* Hide inputs */
+      input {
+        display: none;
+      }
+
+      /* Make labels look clickable */
+      label {
+        cursor: pointer;
+      }
+
+      /*hide slides*/
+      .slide {
+        display: none;
+      }
+
+      /* show the checked slides */
+      #slide1:checked ~ .slide1,
+      #slide2:checked ~ .slide2,
+      #slide3:checked ~ .slide3 {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body id="body" style="margin: 0 !important; padding: 0 !important">
+    <table
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      role="presentation"
+      width="100%"
+    >
+      <tr>
+        <td align="center">
+          <!-- Responsive Email:Target the fixed table with a class=”mobile” -->
+          <table
+            class="mobile"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            width="600"
+            role="presentation"
+            style="background-color = #ffffff; color: black; font-family: sans-serif;
+                          font-size: 14px; line-height:24px; margin:0; padding:0;"
+          >
+            <!-- Logo image -->
+            <tr>
+              <td align="center">
+                <img
+                  class="fade1"
+                  style="max-width: 120px; margin: 1% 0 1% 3%"
+                  src="https://cdn.glitch.global/440810ad-856b-41e0-a39d-30b19432b24e/travel-agent.png?v=1664818821792"
+                  alt=""
+                />
+              </td>
+            </tr>
+
+            <!-- Headline -->
+            <tr>
+              <td align="center">
+                <h1 style="padding: 1%; color: #5922c2">SAFAR TRAVEL AGENCY</h1>
+              </td>
+            </tr>
+
+            <!-- Hero Image -->
+            <tr>
+              <td align="center" style="color: #ffffff; padding: 5px">
+                <img
+                  class="fade2"
+                  alt="This is a picture from Santorini City"
+                  border="0"
+                  src="https://cdn.glitch.global/440810ad-856b-41e0-a39d-30b19432b24e/santorini.jpg?v=1664818816682"
+                  style="display: block; max-width: 100%; min-width: 100px"
+                />
+              </td>
+            </tr>
+
+            <!-- Body copy -->
+            <tr>
+              <td
+                style="color: #ffffff; padding: 5px"
+                background="https://cdn.glitch.global/440810ad-856b-41e0-a39d-30b19432b24e/background.png?v=1664825243085"
+                bgcolor="#229efd"
+              >
+                <h2 style="color: #7b3ef0">Visit Greece with us</h2>
+                <p style="color: black">
+                  On our trips to Greece you'll be living your best Greek life,
+                  ticking off your bucket list as you go, from the Acropolis in
+                  Athens to watching the sun set over iconic Oia. There’s
+                  something for everyone on our Greece travel packages, whether
+                  adrenalin seeker or beach bum. Or simply set sail on the
+                  glittering Aegean and island hop around the magnificent
+                  archipelago. Visit Greece, it really does have it all.
+                </p>
+
+                <p style="color: black">
+                  They’re about immersing yourself in every place you visit,
+                  thanks to insights from our local guides. They’re about
+                  experiencing other cultures and ways of living, thanks to our
+                  hand-picked experiences. And, above all, they’re about having
+                  fun and making connections that last long after the trip ends:
+                  connections with new places and connections with people as
+                  hungry for adventure as you.
+                </p>
+              </td>
+            </tr>
+
+            <!-- Two Columns -->
+            <!-- stacking effect: Target the individual column tables with a class=”block” -->
+            <tr>
+              <td>
+                <table
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  role="presentation"
+                  width="100%"
+                >
+                  <tr>
+                    <td>
+                      <!-- Left Columns -->
+                      <table
+                        class="block"
+                        align="left"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        role="presentation"
+                        width="48%"
+                      >
+                        <tr>
+                          <td
+                            align="center"
+                            style="color: #ffffff; padding: 5px"
+                          >
+                            <img
+                              alt="Cruise"
+                              width="100%"
+                              border="0"
+                              src="https://cdn.glitch.global/1a860c1d-a8d2-4023-99d0-e4d5ecde05b3/Cruise.png?v=1665369067376"
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                min-width: 100px;
+                              "
+                            />
+                          </td>
+                        </tr>
+                      </table>
+
+                      <!-- Right Columns -->
+                      <table
+                        class="block"
+                        align="right"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        role="presentation"
+                        width="48%"
+                      >
+                        <tr>
+                          <td>
+                            <h3 style="color: #680687">
+                              Santorini Luxury Caldera Cruise
+                            </h3>
+                            <p>
+                              Experience Santorini’s beauty, hot springs and
+                              beaches on a catamaran cruise. Select a daytime or
+                              sunset cruise, and sail around the island and
+                              caldera on a deluxe catamaran. A cruise is
+                              essential when you visit Santorini, and with
+                              numbers limited to 20, this offers a small-group
+                              experience.
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Three Columns -->
+            <tr>
+              <td>
+                <table
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  role="presentation"
+                  width="100%"
+                >
+                  <tr>
+                    <td>
+                      <!-- Left Columns -->
+                      <table
+                        class="block"
+                        align="left"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        role="presentation"
+                        width="33%"
+                      >
+                        <tr>
+                          <td
+                            align="center"
+                            style="color: #ffffff; padding: 5px"
+                          >
+                            <img
+                              alt="Cruise"
+                              width="100%"
+                              border="0"
+                              src="https://cdn.glitch.global/1a860c1d-a8d2-4023-99d0-e4d5ecde05b3/Cruise3.png?v=1665371969415"
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                min-width: 100px;
+                              "
+                            />
+                          </td>
+                        </tr>
+                      </table>
+
+                      <!-- Right Columns -->
+                      <table
+                        class="block"
+                        align="right"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        role="presentation"
+                        width="33%"
+                      >
+                        <tr>
+                          <td align="center">
+                            <h4 style="color: red">Lowest Price Guarantee</h4>
+                            <p>
+                              From
+                              <b> $138.63 </b>
+                            </p>
+                            <a
+                              class="button"
+                              href="https://www.viator.com/tours/Santorini/Santorini-Caldera-Cruise-Including-Buffet-and-Drinks/d959-6174SMALLCRUISE"
+                              target="_blabk"
+                              style="background-color:#F1540F; color:#ffffff; border-radius:2px; font-size:16px; font-weight:bold;
+                                      line-height:15px; text-align:center; text-decoration:none; width:100px
+                                      -webkit-text-size-adjust:none; padding: 7px 15px 7px 15px;"
+                              >BOOK NOW</a
+                            >
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- middle Columns -->
+                      <table
+                        class="block"
+                        align="right"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        role="presentation"
+                        width="33%"
+                      >
+                        <tr>
+                          <td
+                            align="center"
+                            style="color: #ffffff; padding: 5px"
+                          >
+                            <img
+                              alt="Cruise"
+                              width="100%"
+                              border="0"
+                              src="https://cdn.glitch.global/1a860c1d-a8d2-4023-99d0-e4d5ecde05b3/Cruise2.png?v=1665371966596"
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                min-width: 100px;
+                              "
+                            />
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Checked box -->
+            <tr>
+              <td align="center" style="padding: 20px">
+                <h2 style="color: #7b3ef0">Top attractions near Santorini</h2>
+
+                <!-- Triggers for switching content -->
+                <input type="radio" name="slides" id="slide1" checked />
+                <input type="radio" name="slides" id="slide2" />
+                <input type="radio" name="slides" id="slide3" />
+
+                <label
+                  for="slide1"
+                  class="slide-label"
+                  style="
+                    border: 2px solid black;
+                    display: inline-block;
+                    margin: 10px;
+                    padding: 4px 20px;
+                    background-color: #d9cdf0;
+                  "
+                  >Santorini Volcano</label
+                >
+                <label
+                  for="slide2"
+                  class="slide-label"
+                  style="
+                    border: 2px solid black;
+                    display: inline-block;
+                    margin: 10px;
+                    padding: 4px 20px;
+                    background-color: #c6b0f0;
+                  "
+                  >Santorini Hot Springs</label
+                >
+                <label
+                  for="slide3"
+                  class="slide-label"
+                  style="
+                    border: 2px solid black;
+                    display: inline-block;
+                    margin: 10px;
+                    padding: 4px 20px;
+                    background-color: #a781f0;
+                  "
+                  >Akrotiri Tours</label
+                >
+                <!-- CONTENT TO BE SWITVHED -->
+                <div
+                  class="slide slide1"
+                  style="background-color: #d9cdf0; padding: 20px"
+                >
+                  <p>
+                    The “Santorini volcano” may refer to two different peaks:
+                    the first, Thira, exploded around 1600 BC and ended the
+                    thriving Minoan civilization and may have spawned the legend
+                    of Atlantis. Millennia of eruptions formed the second
+                    “Santorini volcano”—the island of Nea Kameni, drawing
+                    visitors eager to hike to the rim of its active crater.
+                  </p>
+                </div>
+                <div
+                  class="slide slide2"
+                  style="background-color: #c6b0f0; padding: 20px"
+                >
+                  <p>
+                    Santorini’s hot springs are on the tiny, uninhabited islet
+                    of Palea Kameni. Continuous volcanic activity underground
+                    maintains the springs’ temperature between 86ºF and 95ºF
+                    (30°C and 35°C). The sulfuric, orange-tinged spring waters
+                    that bubble up into a shallow cove off the islet’s coast are
+                    said to be curative for the skin and joints.
+                  </p>
+                </div>
+                <div
+                  class="slide slide3"
+                  style="background-color: #a781f0; padding: 20px"
+                >
+                  <p>
+                    Akrotiri came to an abrupt end in approximately 1613 BC with
+                    a catastrophic volcanic eruption that buried the Bronze Age
+                    settlement in a carpet of ash. Beginning in 1967,
+                    excavations of the Minoan town revealed buildings, drainage
+                    systems, and pottery, but no human remains or gold
+                    valuables, indicating locals had time to flee before
+                    disaster hit.
+                  </p>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Button -->
+            <tr>
+              <td align="center" style="padding: 6px">
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="center">
+                      <a
+                        class="button"
+                        href="https://www.viator.com/Greece/d53"
+                        target="_blabk"
+                        style="
+                          font-size: 22px;
+                          font-family: san-serif;
+                          font-weight: bold;
+                          color: #ffffff;
+                          text-decoration: none;
+                          display: inline-block;
+                          padding: 10px 30px 10px 30px;
+                          border-radius: 3px;
+                          background-color: #1dcf6e;
+                        "
+                        >See All Trips</a
+                      >
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <!-- Footer information: Always include an unsubscribe link! -->
+                <hr />
+                <p id="footer-info" style="color: #7f8381">
+                  feel free to
+                  <a
+                    href="https://media.tenor.com/e_1AVLMpqLoAAAAC/unsubscribe-done.gif"
+                    target="_blabk"
+                    class="btn"
+                    >unsubscribe</a
+                  ><br />
+                  Booking requirements: Travel must be booked by 11:59 PM EDT on
+                  August 20, 2022. <br />
+                  Travel dates: every week (Tues/Wed/Sat Only)<br />
+                  contact@safarTravel.com
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

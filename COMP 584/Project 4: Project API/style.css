@@ -1,0 +1,71 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #68A60E;
+  font-family: Arial, Geneva, sans-serif;
+}
+
+
+.wrapper {
+	width: 400px;
+	max-width: 1200px;
+	margin-top: 20px;
+	float: none;
+	background-color: #CACBC8;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14px 18px;
+}
+
+.row {
+	display: flex;
+  margin-top: 10px;
+	flex-flow: row wrap;
+/*   justify-content: space-between; */
+}
+
+
+/* attribute selector to give some margin between columns and apply styles to flex items */
+
+[class*="col-"] {
+	flex: 1;
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+.input{
+  padding: 14px 18px;
+}
+
+.btn{
+  background-color: #0BA222;
+  color: #ffffff;
+  padding: 4px 8px;
+  width:100px;
+  border-radius: 4px;
+}
+
+.card{
+  background-color: #ffffff;
+  padding: 14px 18px;
+}
+
+.container2{
+    width: 300px;
+    background-color: red;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px 18px;
+}
+
+
+

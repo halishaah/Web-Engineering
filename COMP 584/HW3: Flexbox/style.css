@@ -1,0 +1,130 @@
+/* 
+Border box declaration 
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/ 
+*/
+html {
+  box-sizing: border-box;
+}
+/* inherit border-box on all elements in the universe and before and after
+ */
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: Arial, Geneva, sans-serif;
+}
+a {
+	color: #2772B0;
+}
+.wrapper {
+	width: 97%;
+	max-width: 1200px;
+	margin: 0 auto;
+	float: none;
+	background-color: #ffffff;
+}
+
+div img {
+	width: 100%;
+	max-width: 225px;
+
+}
+
+/* grid system -- mobile first! */
+/* flex contatiner */
+
+.row {
+	display: flex;
+	flex-flow: row wrap;
+/*   justify-content: space-between; */
+}
+
+/* attribute selector to give some margin between columns and apply styles to flex items */
+
+[class*="col-"] {
+	margin-left: 4%;
+	flex: 0 0 92%;
+}
+
+/* Add background colors to see how much space each column is taking */
+
+.col-1, .col-3, .col-7 {
+	background-color: #A3CDD9;
+}
+
+.col-2, .col-6 {
+	background-color: #FFFCE6;
+}
+
+.col-4 {
+	background-color: #D6A215;
+}
+
+.col-5 {
+	background-color: #9A937F;
+}
+.col-8{
+	background-color: #7BF6D6;
+}.col-9{
+	background-color: #0BA17A;
+}
+
+
+
+/* Tablet Landscape Screen Sizes */
+@media only screen and (min-width: 480px)  {
+	
+  .col-1, .col-2, .col-7, .col-8 {
+		flex: 0 0 44%;
+	} 
+  
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-9{
+		flex: 0 0 92%;
+	} 
+  .col-7{
+		order:1;
+	}
+  
+  
+}
+
+
+/* Desktop screen Sizes */
+@media only screen and (min-width: 769px) {
+  
+  
+ 	.col-1, .col-3, .col-7 {
+		flex: 0 0 20%;
+	}
+  
+  
+  
+	.col-2, .col-6 {
+		flex: 0 0 44%;
+	}
+  
+  .col-4 {
+		flex: 0 0 68%;
+	}
+  
+  .col-5 {
+		flex: 0 0 92%;
+	}
+   .col-7{
+		order:0;
+	}
+    .col-8 {
+		flex: 0 0 13%;
+	}
+    .col-9{
+		flex: 0 0 24%;
+	}
+
+}

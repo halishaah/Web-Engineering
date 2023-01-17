@@ -1,0 +1,18 @@
+I put the screen shot on assets.
+
+I have used sliktide accessibility tool. This toolbar is a Chrome plugin that simulates
+using the web with a range of disabilities.
+
+this tools has some features:
+
+  1. Dyslexia simulator:
+  
+  2. Color blindness simulator
+  
+  3. Cataracts and myopia simulator
+  
+  4. Loss of vission simulator
+  
+  5. Screen reader simulator: Experience the web as if you were blind or partially-sighted
+  
+  
